@@ -178,3 +178,15 @@ body {
   }
 
 
+/*  Laptop view*/
+  @media only screen and (min-width: 2560px) {
+ 
+    .sections{
+
+       width: 100vh;
+
+    }
+
+ }
+
+
