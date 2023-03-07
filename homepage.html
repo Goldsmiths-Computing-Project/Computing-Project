@@ -4,17 +4,330 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleSheet.css">
         <title>University Ranking Site</title>
     </head>
 
-    <body>
-        <div>
-            <h1>This is the homepage</h1>
-            <ul style="float:right">
-                <li>Reviews</li>
-                <li>Forums</li>
-                <li>Contact</li>
-              </ul>
-        </div>
+    <body id="a1">
+        
+
+        <div class = navbar>
+            <div class="search-container">
+               <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+               </form>
+            </div>
+            <p>Dark mode</p>
+            <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+            </label>
+            <div class="dropdown">
+               <button class="dropbtn">Menu</button>
+               <div class="dropdown-content">
+                  <a href="reviews.html">Reviews</a>
+                  <a href="#">Forums</a>
+                  <a href="#">Contact</a>
+               </div>
+            </div>
+         </div>
+
+
+        <br>
+        <br>
+        <table id="t1">
+            <thead>
+              <tr>
+                <th>Ranking</th>
+                <th onclick="sortTable(1)">University</th>
+                <th onclick="sortTable(2)">Overall</th>
+                <th onclick="sortTable(3)">Social</th>
+                <th onclick="sortTable(4)">Academic</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr>
+                <td>1</td>
+                <td>Birberk, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Brunel University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>City, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>European School of Economics</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Goldsmiths, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Guidhall School of Music and Drama</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Imperial College London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>King's College London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Kingston University</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>London Business School</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>London Metropolitan University</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>London School of Hygeine and Tropical Medicine</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>London South Bank University</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Middlesex University</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Queen Mary University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Ravensbourne University London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Regent's University London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Richmond, The American International University in London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Rose Bruford College</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Royal Academy of Music, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Royal College of Art</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>Royal College of Music</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>Royal Veterinary College University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>School of Advanced Study, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>SOAS, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>St George's, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>St Mary's University, Twickenham</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>The Courtauld Institute of Art, University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>The London Institute of Banking and Finance</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>The London School of Economics and Political Science</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>The Royal Central School of Speech and Drama</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>Trinity Laban Conservatoire of Music and Dance</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>33</td>
+                <td>University College London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td>University of East London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>35</td>
+                <td>University of Greenwich</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>36</td>
+                <td>University of London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>37</td>
+                <td>University of Roehampton</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>38</td>
+                <td>University of the Arts London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>39</td>
+                <td>University of West London</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>University of Westminster</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              
+            </tbody>
+          </table>
     </body>
 </html>
