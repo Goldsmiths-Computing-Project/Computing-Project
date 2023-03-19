@@ -8,4 +8,8 @@ grid-template-areas: "nav" "uni" "academic"  "social" "transport" "modules" "lec
 You can another section to this area.
 grid-template-rows: repeat(9, auto);
 This is the amount of rows on the page for the grid that will seperate them out. You can change the number to add new sections. 
+
+A good resource to learning Grid Layouts:
+
+https://www.youtube.com/watch?v=9zBsdzdE4sM
  
