@@ -160,14 +160,22 @@ css for writing box at the bottom of the page. */
  align-items: center;
 }
 
+
+.write form {
+
+  display: grid;
+  align-items: center;
+ }
+
 .write .sections #fname {
 
-  min-width: 50vh;
+  min-width: 75vh;
   min-height: 25vh;
   background: white;
   border-style: solid;
   justify-self: center;
-  border-radius: 30px;;
+  border-radius: 5px;;
+  margin: 5px;
 }
 
 .write input[type="submit"]{
@@ -411,4 +419,6 @@ css for writing box at the bottom of the page. */
     color: #F5F5F5;
 
    }
+
+
 
