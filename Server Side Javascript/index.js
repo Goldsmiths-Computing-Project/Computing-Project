@@ -38,7 +38,7 @@ app.engine('html', ejs.renderFile);
 app.set('views', path.join(__dirname, '..', 'Html'));
 
 
-// Requires the route.js file inside the routes folder passing in the Express app and data as arguments.  All the routes will go in this file
+// Requires the route.js file inside the sever side js folder passing in the Express app and data as arguments.  All the routes will go in this file
 require('./routes')(app);
 
 
