@@ -1,4 +1,4 @@
-// Route handler for forum web app
+// Route handler for web app
 module.exports = function(app) {
 
  //The Code for review page goes here
