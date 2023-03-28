@@ -38,8 +38,12 @@ app.engine('html', ejs.renderFile);
 app.set('views', path.join(__dirname, '..', 'Html'));
 
 
-// Requires the route.js file inside the sever side js folder passing in the Express app and data as arguments.  All the routes will go in this file
-require('./routes')(app);
+//Requires all the modules for the different pages
+require('./reviews')(app);
+
+require('./homepage')(app);
+
+require('./forum')(app);
 
 
 // Start the web app listening
