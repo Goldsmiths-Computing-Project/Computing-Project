@@ -1,11 +1,11 @@
 // Route handler for forum web app
 module.exports = function(app) {
 
+ //The Code for review page goes here
  
-    //Render pages
-
-   app.get('/rating', function(req, res) {
-        res.render('rating.ejs');
+    //Render page
+   app.get('/review', function(req, res) {
+        res.render('review.ejs');
       });
   
 
