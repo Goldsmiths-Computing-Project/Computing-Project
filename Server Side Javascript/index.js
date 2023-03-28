@@ -39,7 +39,7 @@ app.set('views', path.join(__dirname, '..', 'Html'));
 
 
 //Requires all the modules for the different pages
-require('./reviews')(app);
+require('./review')(app);
 
 require('./homepage')(app);
 
