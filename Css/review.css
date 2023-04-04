@@ -10,8 +10,8 @@ body {
 .grid-container{
 
     display: grid;
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas: "nav" "uni" "academic"  "social" "transport" "modules" "lecture" "crime" "review" "rating" "write";
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nav" "uni" "academic"  "social" "transport" "modules" "lecture" "crime" "review" "write";
     height: 100%;
     font-size: 2vh;
     grid-gap: 2rem;
@@ -86,11 +86,11 @@ body {
 
     grid-area: review;
 
-}
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
 
-.rating {
-
-  grid-area: rating;
 }
 
 .write {
@@ -102,7 +102,6 @@ body {
 
 /* css for nav bar */
 
-/* CSS for the forum link */
 .navbar a{
  
     text-decoration: underline;
@@ -167,7 +166,7 @@ css for writing box at the bottom of the page. */
   align-items: center;
  }
 
-.write .sections #fname {
+.write .sections #text {
 
   min-width: 75vh;
   min-height: 25vh;
@@ -176,6 +175,22 @@ css for writing box at the bottom of the page. */
   justify-self: center;
   border-radius: 5px;;
   margin: 5px;
+}
+
+.write .sections #name  {
+
+  min-width: 75vh;
+  min-height: 5vh;
+  background: white;
+  border-style: solid;
+  justify-self: center;
+  border-radius: 5px;;
+  margin: 5px;
+}
+
+label {
+
+  justify-self: center;
 }
 
 .write input[type="submit"]{
@@ -229,6 +244,11 @@ css for writing box at the bottom of the page. */
 
 }
 
+.review .titles {
+
+  align-self: center;
+}
+
 /* Css on the divs inside the sections */
 
 .sections{
@@ -246,11 +266,11 @@ css for writing box at the bottom of the page. */
 
 /* Moving the video the right of the div */
 
-.sections video{
+.sections iframe{
 
     float: right;
     margin-right: 1.5rem;
-    width: 350px;
+    margin-bottom: 2rem;
 
 }
 
@@ -397,7 +417,8 @@ css for writing box at the bottom of the page. */
 
    /* Layout for the website if dark mode button is clicked */
 
-   .dark, .dark .university .sections {
+
+   .dark, .dark .university .sections, .dark .navbar a {
 
     background: #202020;
    }
@@ -419,6 +440,5 @@ css for writing box at the bottom of the page. */
     color: #F5F5F5;
 
    }
-
 
 
