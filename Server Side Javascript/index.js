@@ -6,6 +6,26 @@ var express = require ('express')
 var ejs = require('ejs')
 var bodyParser= require ('body-parser')
 const path = require('path');
+const mysql = require('mysql');
+
+
+// Define the database connection
+const db = mysql.createConnection ({
+    host: 'localhost',
+    user: 'forumapp',
+    password: 'qwerty',
+    database: 'reviewsDatabase'
+});
+// Connect to the database
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('Connected to database');
+});
+global.db = db;
+
+
 
 // Create the express application object
 const app = express()
@@ -44,6 +64,8 @@ require('./review')(app);
 require('./homepage')(app);
 
 require('./forum')(app);
+
+require('./contact')(app);
 
 
 // Start the web app listening
