@@ -12,6 +12,17 @@ CREATE TABLE reviews (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE forum (
+  user_id INT NOT NULL UNIQUE AUTO_INCREMENT,
+  firstname VARCHAR(20) NOT NULL,
+  surname VARCHAR(20) NOT NULL,
+  username VARCHAR(15) NOT NULL UNIQUE,
+  topic_title VARCHAR(20),
+  post_date DATETIME,
+  post_content MEDIUMTEXT,
+  PRIMARY KEY(user_id)
+);
+
 # Create the user which the web app will use to access the database
 DROP USER IF EXISTS 'forumapp'@'localhost';
 CREATE USER 'forumapp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'qwerty';
