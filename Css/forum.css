@@ -11,7 +11,6 @@ body {
 
     display: grid;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: "nav" "uni" "academic"  "social" "transport" "modules" "lecture" "crime" "review" "write";
     height: 100%;
     font-size: 2vh;
     grid-gap: 2rem;
