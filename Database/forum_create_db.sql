@@ -15,12 +15,18 @@ DROP TABLE IF EXISTS lists;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS topics;
 
-# Create the user table to store user details
+# Create some users table to store user details
 CREATE TABLE users (
   user_id INT NOT NULL UNIQUE AUTO_INCREMENT,
-  firstname VARCHAR(20) NOT NULL,
-  surname VARCHAR(20) NOT NULL,
   username VARCHAR(15) NOT NULL UNIQUE,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  name VARCHAR(20) NOT NULL,
+  surname VARCHAR(20) NOT NULL,
+  university VARCHAR(255),
+  degree VARCHAR(255),
+  subject VARCHAR(255),
+  year_of_study INT,
   PRIMARY KEY(user_id)
 );
 
