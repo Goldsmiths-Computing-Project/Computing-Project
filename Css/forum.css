@@ -1,32 +1,39 @@
-.center {
-  text-align: center;
-}
+* {box-sizing: border-box;}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #505050;
+}
 
 /* Outer Grid container */
 .grid-container{
 
     display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nav" "uni" "academic"  "social" "transport" "modules" "lecture" "crime" "review" "write";
     height: 100%;
     font-size: 2vh;
     grid-gap: 2rem;
 
 }
 
-/* Body Header */
+/* Applying grid layout to the diffrent sections in the grid layout  */
 
-/* css for nav bar */
 .navbar {
 
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-gap: 2.5rem;
-  justify-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  width: 100%;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 2.5rem;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
 }
+
+
+/* css for nav bar */
 
 .navbar a{
  
@@ -60,8 +67,6 @@ input[type=text] {
   color: black;
   opacity: 1; /* Firefox */
 }
-
-
 
 /* css for drop down menu */
 
@@ -180,31 +185,29 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* Layout for the website if dark mode button is clicked */
 
 
- .dark, .dark .university .sections, .dark .navbar a {
 
-  background: #202020;
- }
 
- .dark .sections, .dark a, .dark .dropbtn {
 
-  background-color: #303030;
-  color: #F5F5F5;
- }
 
- .dark .navbar{
 
-  color: #F5F5F5;
 
- }
 
- .dark .grid-container {
 
-  color: #F5F5F5;
 
- }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -212,30 +215,54 @@ input:checked + .slider:before {
 
 
 /* Main */
+
 .container{
-    min-height: 15vh;
-    width: 275vh;
-    background-color: #D3D3D3;
-    border-radius: 30px;
-    overflow: auto;
-    overflow-wrap: break-word;
-    margin-bottom: 30px;
-    margin-top : 20p;
-    margin-left :50px;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  
+  
+  
+  justify-self: center;
+  
+  
+  
+    
+  
     
 }
-      
-.threads_user{
-  padding-right: 0.5cm;
+
+
+.sections{
+  background-color: #D3D3D3;
+  border-radius: 30px;
+  overflow: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  min-width: 80%;
+  max-width: 80%;
+  align-items: center;
+  overflow-wrap: break-word;
+  margin-top : 20p;
+  margin-left :50px;
+  margin-bottom :20px;
+  padding: 5px;
+  justify-content: space-between;
 }
+
 .threads_header{
   font: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
   line-height: 3vh;
+  max-width: 250px;
+  line-height: normal;
+} 
+.threads_user{
+  padding-right: 0.5cm;
+  max-width: 100px;
 }
+
+.threads_body{
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
 .pagination {
   display: inline-block;
 }
@@ -254,3 +281,36 @@ input:checked + .slider:before {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pag_center{
+  text-align: center;
+}
+
+
+
+
+   /* Layout for the website if dark mode button is clicked */
+
+
+   .dark, .dark .university .sections, .dark .navbar a {
+
+    background: #202020;
+   }
+
+   .dark .sections, .dark a, .dark .dropbtn {
+
+    background-color: #303030;
+    color: #F5F5F5;
+   }
+
+   .dark .navbar{
+
+    color: #F5F5F5;
+
+   }
+
+   .dark .grid-container {
+
+    color: #F5F5F5;
+
+   }
