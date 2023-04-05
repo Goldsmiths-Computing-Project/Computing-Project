@@ -180,6 +180,32 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Layout for the website if dark mode button is clicked */
+
+
+ .dark, .dark .university .sections, .dark .navbar a {
+
+  background: #202020;
+ }
+
+ .dark .sections, .dark a, .dark .dropbtn {
+
+  background-color: #303030;
+  color: #F5F5F5;
+ }
+
+ .dark .navbar{
+
+  color: #F5F5F5;
+
+ }
+
+ .dark .grid-container {
+
+  color: #F5F5F5;
+
+ }
+
 
 
 
@@ -188,15 +214,15 @@ input:checked + .slider:before {
 /* Main */
 .container{
     min-height: 15vh;
-    width: 110vh;
+    width: 275vh;
     background-color: #D3D3D3;
     border-radius: 30px;
     overflow: auto;
     overflow-wrap: break-word;
     margin-bottom: 30px;
     margin-top : 20p;
+    margin-left :50px;
     padding: 10px;
-    
     align-items: center;
     display: flex;
     justify-content: space-between;
