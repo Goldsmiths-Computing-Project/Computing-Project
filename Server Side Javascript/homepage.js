@@ -1,10 +1,8 @@
-
-
 module.exports = function(app) {
 
   //The Code for homepage page goes here
 
-  //Render page
+  // //Render page
   app.get('/', function(req, res) {
     let sqlquery = "SELECT * FROM Uni"; // query database to get all the uni info
 
@@ -23,7 +21,7 @@ module.exports = function(app) {
     });
   });
 
-// // Handle sorting when user clicks on table header
+// Handle sorting when user clicks on table header
 app.get('/sort/:column/:order', function(req, res) {
   var column = req.params.column;
   var paramOrder = req.params.order;
@@ -50,11 +48,10 @@ app.get('/sort/:column/:order', function(req, res) {
     } else {
       const uniData = { universities: result, reviews: [] };    
       // console.log(uniData);
-      res.render('homepage.ejs', uniData);
+      const route = `sort-${column}-${paramOrder}.ejs`;
+      res.render(route, uniData);
     }
   });
 });
-
-  
   
 };
