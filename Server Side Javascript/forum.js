@@ -28,10 +28,10 @@ app.get('/forum', (req, res) => {
 
 
 //write
-app.post('/post', (req, res) => {
-  const { name, lecture, course, review } = req.body;
-  const sql = `INSERT INTO forum (username, topic_title, comment) VALUES (?, ?, ?, ?, ?)`;
-  const values = [name, course, lecture, review, new Date()];
+app.post('/thread', (req, res) => {
+  const { firstname, surname, username, topic, review} = req.body;
+  const sql = `INSERT INTO forum (firstname, surname, username, topic_title, post_content) VALUES (?, ?, ?, ?, ?)`;
+  const values = [firstname, surname, username, topic, review];
   db.query(sql, values, (err, result) => {
     if (err) {
       throw err;
