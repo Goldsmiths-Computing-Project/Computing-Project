@@ -150,3 +150,9 @@ INSERT INTO Uni(Ranks,Institution,Entry_Standards,Student_Satisfaction,Research_
 INSERT INTO Uni(Ranks,Institution,Entry_Standards,Student_Satisfaction,Research_Quality,Research_Intensity,Graduate_prospects_outcomes,Graduate_prospects_on_track,StudentStaff_Ratio,Academic_Services_Spend,Facilities_Spend,Degree_Completion,Overall_Score) VALUES (128,'Leeds Trinity University',111,3.74,2.11,0.37,56.2,66.8,21.5,1256,386,72.2,310);
 INSERT INTO Uni(Ranks,Institution,Entry_Standards,Student_Satisfaction,Research_Quality,Research_Intensity,Graduate_prospects_outcomes,Graduate_prospects_on_track,StudentStaff_Ratio,Academic_Services_Spend,Facilities_Spend,Degree_Completion,Overall_Score) VALUES (130,'Ravensbourne University London',111,3.54,2.2,0.17,59.6,71.8,24.6,1150,309,79,300);
 
+INSERT INTO forum (firstname, surname, username,topic_title,post_date,post_content)
+VALUES  ('Shad','Travis','shaddy','Campus Accessibility', '2021-11-01 12:53', 'THIS IS NOT ACCESSIBLE FOR DISABLE PEOPLE AT ALL!!!'),
+		('Bernadette','Bagley','baggy','Facilities','2021-11-07 16:26', 'They have really intriguing buildings..'),
+		('Rolo','Vicario','roly','Faculty','2021-11-13 17:01', 'The professor teaching software project is awesome!'),
+		('Sophie','Panza','panny','Graduate prospects', '2021-11-03 10:34', 'I did not get a job after university…'),
+		('Miriana','Vitali','vit','Student satisfaction','2021-11-13 19:45', 'I really recommend people to study here! Good vibe and I love the campus');
