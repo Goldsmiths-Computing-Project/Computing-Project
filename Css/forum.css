@@ -217,16 +217,7 @@ input:checked + .slider:before {
 /* Main */
 
 .container{
-  
-  
-  
   justify-self: center;
-  
-  
-  
-    
-  
-    
 }
 
 
@@ -263,6 +254,72 @@ input:checked + .slider:before {
   max-width: 300px;
 }
 
+
+
+/* 
+css for writing box at the bottom of the page. */
+
+.write {
+  grid-area: academic;
+  justify-self: center;
+  display: grid;
+  min-width: 100%;
+  max-width: 100%;
+  grid-area: write;
+}
+
+.write .sections {
+  display: grid;
+  align-items: center;
+}
+
+.write form {
+  display: grid;
+  align-items: center;
+}
+
+.write .sections #text {
+  min-width: 92vh;
+  min-height: 25vh;
+  background: white;
+  border-style: solid;
+  justify-self: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.write .sections #name {
+  min-width: 92vh;
+  min-height: 5vh;
+  background: white;
+  border-style: solid;
+  justify-self: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.write input[type="submit"] {
+  min-width: 20vh;
+  min-height: 7vh;
+  justify-self: center;
+  border-radius: 30px;
+  background-color: grey;
+}
+
+label {
+  justify-self: center;
+}
+
+.titles {
+  justify-self: center;
+  align-self: flex-end;
+  font-size: 2rem;
+}
+
+
+
+
+
 .pagination {
   display: inline-block;
 }
@@ -288,29 +345,28 @@ input:checked + .slider:before {
 
 
 
+/* Layout for the website if dark mode button is clicked */
 
-   /* Layout for the website if dark mode button is clicked */
 
+.dark, .dark .sections, .dark .navbar a {
 
-   .dark, .dark .university .sections, .dark .navbar a {
+  background: #202020;
+ }
 
-    background: #202020;
-   }
+ .dark .sections, .dark a, .dark .dropbtn {
 
-   .dark .sections, .dark a, .dark .dropbtn {
+  background-color: #303030;
+  color: #F5F5F5;
+ }
 
-    background-color: #303030;
-    color: #F5F5F5;
-   }
+ .dark .navbar{
 
-   .dark .navbar{
+  color: #F5F5F5;
 
-    color: #F5F5F5;
+ }
 
-   }
+ .dark .grid-container {
 
-   .dark .grid-container {
+  color: #F5F5F5;
 
-    color: #F5F5F5;
-
-   }
+ }   
